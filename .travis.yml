@@ -4,3 +4,10 @@ python:
 
 script:
   - python testsuite.py
+
+notifications:
+  slack:
+    rooms:
+      - laserscanner:HBoSea1RDBD9bkkcGd87hO2j#travis_ci
+    on_success: change # default: always
+    on_failure: always # default: always
